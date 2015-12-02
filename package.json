@@ -1,0 +1,14 @@
+{
+  "name": "reviewbot-eslint",
+  "version": "0.1.0",
+  "description": "The eslint plugin for reviewbot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alexander Lobashev",
+  "license": "MIT",
+  "dependencies": {
+    "eslint": "1.10.3"
+  }
+}
