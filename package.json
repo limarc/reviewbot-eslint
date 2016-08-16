@@ -1,6 +1,6 @@
 {
   "name": "reviewbot-eslint",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "The eslint plugin for reviewbot",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "author": "Alexander Lobashev",
   "license": "MIT",
-  "dependencies": {
-    "eslint": "1.10.3"
+  "peerDependencies": {
+    "eslint": ">=1.10.3"
   }
 }
