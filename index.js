@@ -33,13 +33,15 @@ module.exports = function(config) {
                 if (count) {
                     report.results.forEach(function(result) {
                         result.messages.forEach(function(message) {
-                            log.errors.push({
-                                filename: result.filePath.replace(cwd + '/', ''),
-                                line: message.line,
-                                column: message.column,
-                                rule: message.ruleId,
-                                message: String(message.message).replace("\n", '')
-                            });
+                            if (message.severity === 2) { // include only rules with 'error' severity
+                                log.errors.push({
+                                    filename: result.filePath.replace(cwd + '/', ''),
+                                    line: message.line,
+                                    column: message.column,
+                                    rule: message.ruleId,
+                                    message: String(message.message).replace("\n", '')
+                                });
+                            }
                         });
                     });
                 }
