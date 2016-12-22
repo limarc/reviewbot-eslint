@@ -1,2 +1,2 @@
-The eslint plugin for reviewbot
+The eslint plugin for reviewbot [Deprecated]
 https://github.com/limarc/reviewbot
